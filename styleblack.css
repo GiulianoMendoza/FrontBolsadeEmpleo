@@ -1,0 +1,952 @@
+
+:root {
+    --green: #80aa5b;
+    --semiblack: #1b1f23;
+    --sblack: #38434f;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #000;
+}
+/* sidebar */
+nav .wrapper .left {
+    padding-left: 1rem;
+    display: flex;
+    gap: 15rem;
+}
+
+nav .wrapper .left .input {
+    background: var(--sblack);
+    width: 100%;
+    padding: 0.5rem 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 0.2rem;
+}
+
+nav .wrapper .left .input input[type='search'] {
+    width: 30rem;
+    border: none;
+    background: transparent;
+}
+
+nav .wrapper .left .input input[type='search']::placeholder {
+    font-size: 1rem;
+    color: rgb(199, 196, 196);
+    font-weight: 100;
+}
+
+nav .wrapper .left .input i {
+    font-size: 1rem;
+    color: rgb(199, 196, 196);
+}
+.container{
+    display: grid;
+    grid-template-columns: 20% 52% 28%;
+    gap: 1.4rem;
+    width: 85%;
+    margin: 1.8rem auto;
+}
+
+aside .sidebar{
+    background: var(--semiblack);
+    width: 100%;
+    height: 45vh;
+    position: relative;
+    border-radius: 0.8rem;
+    overflow: hidden;
+}
+
+.sidebar .top {
+    width: 100%;
+    height: 8vh;
+    background-color: var(--green);
+    position: absolute;
+    
+}
+
+.sidebar img{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    top: 3%;
+    border-radius: 50%;
+    width: 4.5rem;
+    height: 4.5rem;
+    border: 2px solid #fff;
+    
+}
+
+aside .sidebar .profile{
+    position: relative;
+    text-align: center;
+    top: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.sidebar .profile a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.sidebar .profile a:hover{
+    text-decoration: underline;
+}
+
+.sidebar .profile small{
+    font-size: 0.7rem;
+    color: #868d96;
+}
+
+.sidebar .view{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top: 6%;
+}
+
+.sidebar .view .views{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.2rem 0.5rem;
+    cursor: pointer;
+    font-weight: 100;
+    padding-bottom: 0.4rem;
+}
+
+.sidebar .view .views:hover{
+    background-color: #333536;
+}
+
+.sidebar .view .views h6{
+    color: gray;
+    font-weight: 100;
+}
+
+
+
+hr#premium,
+hr#view,
+hr#profile{
+    margin: 0.5rem 0 0 0;
+}
+.items i{
+    color: gray;
+}
+.items{
+    position: relative;
+    top: 7%;
+    display: flex;
+    gap: 0.5rem;
+    margin: 0.4rem 0 0 1rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+aside .recent_jobs{
+    background: var(--semiblack);
+    margin-top: 0.5rem;
+    width: 100%;
+    height: 20vh;
+    position: relative;
+    border-radius: 0.8rem;
+    overflow: hidden;
+}
+
+aside .recent_jobs .recent{
+    margin: 1rem;
+}
+
+aside .recent_jobs .recent h6{
+    font-weight: 100;
+    color: #fff;
+}
+
+aside .recent_jobs .recent .one{
+    display: flex;
+    align-items: center;
+    margin-top: 0.7rem;
+    gap: 0.5rem;
+    color: #868d96;
+}
+aside .recent_jobs .recent .one h6{
+    color: #868d96;
+}
+
+
+aside .recent_jobs .recent .one i{
+    font-size: 0.8rem;
+}
+
+
+
+/*Centro */
+
+main{
+    background: var(--semiblack);
+    border-radius: 0.8rem;
+    height: auto;
+    position: relative;
+}
+
+main #close{
+    position: absolute;
+    right: 2rem;
+    top: 1rem;
+    color: #fff;
+}
+
+main .event{
+    margin: 1.5rem 0 0 1rem;
+}
+
+main .event h3{
+    font-weight: 200;
+    color: #fff;
+}
+
+main .box{
+    width: 95%;
+    overflow: hidden;
+    margin: 0.5rem auto;
+    border-radius: 0.5rem;
+}
+main .box .content{
+    padding: 0.5rem 1rem;
+}
+
+main .box .content p{
+    font-weight: 100;
+    color: #868d96;
+}
+main .box .content p a{
+    text-decoration: none;
+    color: #868d96;
+}
+main .box .content h2 a{
+    text-decoration: none;
+    color: #ebe1e1;
+}
+
+
+main .box .btn{
+    border: none;
+    background: var(--green);
+    padding: 0.6rem 1rem;
+    border-radius: 5rem;
+    margin: 0.5rem 1rem;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s all ease;
+}
+
+main .box .btn:hover{
+    background: #79985e;
+}
+.company-logo {
+    max-width: 65px;
+    max-height: 65px;
+    display: block;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+/* Lado derecho*/
+
+.right_side{
+    background: var(--semiblack);
+    border-radius: 0.8rem;
+    height: 40vh;
+}
+
+.right_side .news{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+}
+.right_side .news i{
+    color: var(--green);
+}
+
+.right_side .news h4{
+    font-weight: 400;
+    color: #fff;
+}
+
+.right_side .latest_news{
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: 0.2s all ease;
+}
+
+.right_side .latest_news:hover{
+    background: var(--green);
+}
+
+.right_side .latest_news .one{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.right_side .latest_news .one h5{
+    font-weight: 500;
+    color: #868d96;
+}
+
+.right_side .latest_news .one i{
+    font-size: 0.5rem;
+    color: var(--green);
+}
+
+
+.right_side .show_more{
+    display: flex;
+    gap: 0.5rem;
+    color: #fff;
+    align-items: center;
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.right_side .show_more h5{
+    font-weight: 400;
+}
+ .fbox-container{
+    background: var(--semiblack);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+@media(max-width:1366px) {
+    :root {
+    --green: #80aa5b;
+    --semiblack: #1b1f23;
+    --sblack: #38434f;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #000;
+}
+/* sidebar */
+
+.container{
+    display: grid;
+    grid-template-columns: 20% 52% 28%;
+    gap: 1.4rem;
+    width: 85%;
+    margin: 1.8rem auto;
+}
+
+aside .sidebar{
+    background: var(--semiblack);
+    width: 100%;
+    height: 33vh;
+    position: relative;
+    border-radius: 0.8rem;
+    overflow: hidden;
+}
+
+.sidebar .top {
+    width: 100%;
+    height: 8vh;
+    background-color: var(--green);
+    position: absolute;
+    
+}
+
+.sidebar img{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    top: 3%;
+    border-radius: 50%;
+    width: 4.5rem;
+    height: 4.5rem;
+    border: 2px solid #fff;
+    
+}
+
+aside .sidebar .profile{
+    position: relative;
+    text-align: center;
+    top: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.sidebar .profile a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.sidebar .profile a:hover{
+    text-decoration: underline;
+}
+
+.sidebar .profile small{
+    font-size: 0.7rem;
+    color: #868d96;
+}
+
+.sidebar .view{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top: 6%;
+}
+
+.sidebar .view .views{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.2rem 0.5rem;
+    cursor: pointer;
+    font-weight: 100;
+    padding-bottom: 0.4rem;
+}
+
+.sidebar .view .views:hover{
+    background-color: #333536;
+}
+
+.sidebar .view .views h6{
+    color: gray;
+    font-weight: 100;
+}
+
+.sidebar .view .views a{
+    color: var(--green);
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+.sidebar .premium{
+    position: relative;
+    top: 7%;
+}
+
+
+.sidebar .premium h6{
+    color: #868d96;
+    font-weight: 100;
+    margin-left: 0.2rem;
+}
+
+.sidebar .premium a{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    text-decoration: none;
+    margin-left: 1rem;
+    font-size: 0.8rem;
+    color: #fff;
+}
+
+.sidebar .premium a i{
+    color: gray
+}
+
+hr#premium,
+hr#view,
+hr#profile{
+    margin: 0.5rem 0 0 0;
+}
+.items i{
+    color: gray;
+}
+.items{
+    position: relative;
+    top: 7%;
+    display: flex;
+    gap: 0.5rem;
+    margin: 0.4rem 0 0 1rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+aside .recent_jobs{
+    background: var(--semiblack);
+    margin-top: 0.5rem;
+    width: 100%;
+    height: 20vh;
+    position: relative;
+    border-radius: 0.8rem;
+    overflow: hidden;
+}
+
+aside .recent_jobs .recent{
+    margin: 1rem;
+}
+
+aside .recent_jobs .recent h6{
+    font-weight: 100;
+    color: #fff;
+}
+
+aside .recent_jobs .recent .one{
+    display: flex;
+    align-items: center;
+    margin-top: 0.7rem;
+    gap: 0.5rem;
+    color: #868d96;
+}
+aside .recent_jobs .recent .one h6{
+    color: #868d96;
+}
+
+
+aside .recent_jobs .recent .one i{
+    font-size: 0.8rem;
+}
+
+
+
+/*Centro */
+
+main{
+    background: var(--semiblack);
+    border-radius: 0.8rem;
+    height: auto;
+    position: relative;
+}
+
+main #close{
+    position: absolute;
+    right: 2rem;
+    top: 1rem;
+    color: #fff;
+}
+
+main .event{
+    margin: 1.5rem 0 0 1rem;
+}
+
+main .event h3{
+    font-weight: 200;
+    color: #fff;
+}
+
+main .box{
+    width: 95%;
+    overflow: hidden;
+    margin: 0.5rem auto;
+    border-radius: 0.5rem;
+}
+main .box .content{
+    padding: 0.5rem 1rem;
+}
+
+main .box .content p{
+    font-weight: 100;
+    color: #868d96;
+}
+main .box .content p a{
+    text-decoration: none;
+    color: #868d96;
+}
+main .box .content h2 a{
+    text-decoration: none;
+    color: #ebe1e1;
+}
+
+
+main .box .btn{
+    border: none;
+    background: var(--green);
+    padding: 0.6rem 1rem;
+    border-radius: 5rem;
+    margin: 0.5rem 1rem;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s all ease;
+}
+
+main .box .btn:hover{
+    background: #79985e;
+}
+
+
+/* Lado derecho*/
+
+.right_side{
+    background: var(--semiblack);
+    border-radius: 0.8rem;
+    height: 15vh;
+}
+
+.right_side .news{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+}
+.right_side .news i{
+    color: var(--green);
+}
+
+.right_side .news h4{
+    font-weight: 400;
+    color: #fff;
+}
+
+.right_side .latest_news{
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: 0.2s all ease;
+}
+
+.right_side .latest_news:hover{
+    background: var(--green);
+}
+
+.right_side .latest_news .one{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.right_side .latest_news .one h5{
+    font-weight: 500;
+    color: #868d96;
+}
+
+.right_side .latest_news .one i{
+    font-size: 0.5rem;
+    color: var(--green);
+}
+
+
+.right_side .show_more{
+    display: flex;
+    gap: 0.5rem;
+    color: #fff;
+    align-items: center;
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.right_side .show_more h5{
+    font-weight: 400;
+}
+}
+@media(max-width:768px) {
+    :root {
+    --green: #80aa5b;
+    --semiblack: #1b1f23;
+    --sblack: #38434f;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #000;
+}
+
+/* sidebar */
+
+.container{
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 1.4rem;
+    width: 85%;
+    margin: 1.8rem auto;
+}
+
+aside .sidebar{
+    background: var(--semiblack);
+    width: 100%;
+    height: 28vh;
+    position: relative;
+    border-radius: 0.8rem;
+    overflow: hidden;
+}
+
+.sidebar .top {
+    width: 100%;
+    height: 8vh;
+    background-color: var(--green);
+    position: absolute;
+    
+}
+
+.sidebar img{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    top: 3%;
+    border-radius: 50%;
+    width: 4.5rem;
+    height: 4.5rem;
+    border: 2px solid #fff;
+    
+}
+
+aside .sidebar .profile{
+    position: relative;
+    text-align: center;
+    top: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.sidebar .profile a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.sidebar .profile a:hover{
+    text-decoration: underline;
+}
+
+.sidebar .profile small{
+    font-size: 0.7rem;
+    color: #868d96;
+}
+
+.sidebar .view{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top: 6%;
+}
+
+.sidebar .view .views{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.2rem 0.5rem;
+    cursor: pointer;
+    font-weight: 100;
+    padding-bottom: 0.4rem;
+}
+
+.sidebar .view .views:hover{
+    background-color: #333536;
+}
+
+.sidebar .view .views h6{
+    color: gray;
+    font-weight: 100;
+}
+
+.sidebar .view .views a{
+    color: var(--green);
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+hr#premium,
+hr#view,
+hr#profile{
+    margin: 0.5rem 0 0 0;
+}
+.items i{
+    color: gray;
+}
+.items{
+    position: relative;
+    top: 7%;
+    display: flex;
+    gap: 0.5rem;
+    margin: 0.4rem 0 0 1rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+aside .recent_jobs{
+    background: var(--semiblack);
+    margin-top: 0.5rem;
+    width: 100%;
+    height: 8vh;
+    position: relative;
+    border-radius: 0.8rem;
+    overflow: hidden;
+}
+
+aside .recent_jobs .recent{
+    display: flex;
+}
+
+aside .recent_jobs .recent h6{
+    font-weight: 100;
+    color: #fff;
+}
+
+aside .recent_jobs .recent .one{
+    display: flex;
+    align-items: center;
+    margin-top: 0.7rem;
+    gap: 0.35rem;
+    color: #868d96;
+}
+aside .recent_jobs .recent .one h6{
+    color: #868d96;
+}
+
+
+aside .recent_jobs .recent .one i{
+    font-size: 0.8rem;
+}
+
+
+
+/*Centro */
+
+main{
+    background: var(--semiblack);
+    border-radius: 0.8rem;
+    height: auto;
+    position: relative;
+}
+
+main #close{
+    position: absolute;
+    right: 2rem;
+    top: 1rem;
+    color: #fff;
+}
+
+main .event{
+    margin: 1.5rem 0 0 1rem;
+}
+
+main .event h3{
+    font-weight: 200;
+    color: #fff;
+}
+
+main .box{
+    width: 95%;
+    overflow: hidden;
+    margin: 0.5rem auto;
+    border-radius: 0.5rem;
+}
+main .box .content{
+    padding: 0.5rem 1rem;
+}
+
+main .box .content p{
+    font-weight: 100;
+    color: #868d96;
+}
+main .box .content p a{
+    text-decoration: none;
+    color: #868d96;
+}
+main .box .content h2 a{
+    text-decoration: none;
+    color: #ebe1e1;
+}
+
+
+main .box .btn{
+    border: none;
+    background: var(--green);
+    padding: 0.6rem 1rem;
+    border-radius: 5rem;
+    margin: 0.5rem 1rem;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s all ease;
+}
+
+main .box .btn:hover{
+    background: #79985e;
+}
+
+
+/* Lado derecho*/
+
+.right_side{
+    background: var(--semiblack);
+    border-radius: 0.8rem;
+    height: 30vh;
+}
+
+.right_side .news{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+}
+.right_side .news i{
+    color: var(--green);
+}
+
+.right_side .news h4{
+    font-weight: 400;
+    color: #fff;
+}
+
+.right_side .latest_news{
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: 0.2s all ease;
+}
+
+.right_side .latest_news:hover{
+    background: var(--green);
+}
+
+.right_side .latest_news .one{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.right_side .latest_news .one h5{
+    font-weight: 500;
+    color: #868d96;
+}
+
+.right_side .latest_news .one i{
+    font-size: 0.5rem;
+    color: var(--green);
+}
+
+
+.right_side .show_more{
+    display: flex;
+    gap: 0.5rem;
+    color: #fff;
+    align-items: center;
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.right_side .show_more h5{
+    font-weight: 400;
+}
+    
+}
